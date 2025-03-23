@@ -1,0 +1,362 @@
+.body {
+    margin: 0;
+    background-color: black; /* Чорний фон для всієї сторінки */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Висота на весь екран */
+
+}
+/* 7. float */
+
+.container {
+    position: absolute; /* Встановлює позицію контейнера відносно його звичайного положення */
+    width: 1440px; /* Ширина контейнера */
+    height: 1622px; /* Висота контейнера */
+    top: 80px;
+    left: 81px;
+    background: #FFFFFF; /* Колір фону контейнера */
+}
+
+/* Short By */
+
+.short-by {
+    position: relative; /* Встановлює абсолютну позицію елемента */
+    width: 838px; /* Ширина елемента */
+    height: 23px; /* Висота елемента */
+    left: 495px; /* Відступ зліва */
+    top: 171px; /* Відступ зверху */
+}
+
+.all-plants {
+    font-family: 'Cera Pro'; /* Шрифт тексту */
+    font-style: normal; /* Стиль шрифту */
+    font-weight: 700; /* Жирність шрифту */
+    font-size: 15px; /* Розмір шрифту */
+    line-height: 16px; /* Висота рядка */
+    color: #46A358; /* Колір тексту */
+}
+
+.new-arrivals, .sale, .short-by-text, .default-sorting {
+    position: relative;
+    font-family: 'Cera Pro'; /* Шрифт тексту */
+    font-style: normal; /* Стиль шрифту */
+    font-weight: 400; /* Жирність шрифту */
+    font-size: 15px; /* Розмір шрифту */
+    line-height: 15px; /* Висота рядка */
+    color: #3D3D3D; /* Колір тексту */
+}
+
+.new-arrivals {
+    position: relative;
+    margin-left: 103px; /* Відступ зліва */
+    width: 86px;
+    left: -65px;
+    color: #3D3D3D;
+}
+
+.sale {
+    position: absolute;
+    margin-left: 400px; /* Відступ зліва */
+    width: 29px;
+    left: -180px;
+    top: 5px;
+    color: #3D3D3D;
+}
+
+.short-by-text {
+    position: absolute;
+    margin-left: 440px; /* Відступ зліва */
+    display: flex;
+    width: 63px;
+    top: 5px;
+    left: 200px;
+    color: #3D3D3D;
+    line-height: 2px; /* Висота рядка */
+}
+.sort-by label {
+    position: absolute;
+    white-space: nowrap;
+    left: 300px;
+}
+.default-sorting {
+    position: absolute;
+    margin-left: -100px; /* Відступ зліва */
+    width: 103px;
+    top: 2px;
+    left: 815px;
+    color: #3D3D3D;
+    line-height: 5px; /* Висота рядка */
+}
+
+
+.sorting {
+    display: flex; /* Використовуємо flexbox для вирівнювання елементів */
+    align-items: center; /* Вирівнюємо елементи по вертикалі */
+}
+
+.arrow-icon {
+    position: absolute;
+    width: 16px; /* Задаємо ширину значка */
+    height: 16px; /* Задаємо висоту значка */
+    margin-left: 820px; /* Задаємо відступ зліва від тексту */
+    top: 0;
+}
+.line {
+    position: absolute; /* Встановлює абсолютну позицію елемента */
+    width: 65px; /* Ширина елемента */
+    height: 2px; /* Висота елемента */
+    left: 0; /* Відступ зліва */
+    top: 5px; /* Відступ зверху */
+    background-color: #46A358; /* Колір фону елемента */
+}
+
+/* Categories, Price Range, Size */
+
+.categories {
+    position: absolute; /* Встановлює абсолютну позицію елемента */
+    width: 310px; /* Ширина елемента */
+    height: 700px; /* Висота елемента */
+    left: 140px; /* Відступ зліва */
+    top: 150px; /* Відступ зверху */
+    background: #FBFBFB; /* Колір фону елемента */
+}
+
+.categories-frame {
+    position: absolute; /* Встановлює абсолютну позицію елемента */
+    width: 103px; /* Ширина елемента */
+    height: 15px; /* Висота елемента */
+    left: 53px; /* Відступ зліва */
+    top: 15px; /* Відступ зверху */
+    gap: 10px;
+}
+
+.categories-title {
+    position: relative;
+    font-family: 'Cera Pro'; /* Шрифт тексту */
+    font-style: normal; /* Стиль шрифту */
+    font-weight: 900; /* Жирність шрифту */
+    font-size: 18px; /* Розмір шрифту */
+    left: 15px;
+    line-height: 16px; /* Висота рядка */
+    color: #3D3D3D; /* Колір тексту */
+}
+/* Стилі для активного пункту "All Plants" */
+.category-link {
+    font-family: 'Cera Pro'; /* Або інший шрифт, який ви використовуєте */
+    font-style: normal;
+    width: 310px;
+    height: 774px;
+    top: 171px;
+    left: 135px;
+    font-weight: 100; /* Жирний шрифт */
+    font-size: 15px; /* Розмір шрифту */
+    line-height: 40px; /* Висота рядка */
+    color: #46A358; /* Колір тексту */
+    text-decoration: none; /* Видаляє підкреслення */
+}
+.categories-list {
+    position: absolute; /* Встановлює абсолютну позицію елемента */
+    width: 91px; /* Ширина елемента */
+    height: 360px; /* Висота елемента */
+    left: 12px; /* Відступ зліва */
+    top: 23px; /* Відступ зверху */
+    font-family: 'Cera Pro'; /* Шрифт тексту */
+    font-style: normal; /* Стиль шрифту */
+    font-weight: 500; /* Жирність шрифту */
+    font-size: 15px; /* Розмір шрифту */
+    line-height: 40px; /* Висота рядка */
+    color: black; /* Колір тексту */
+    list-style: none; /* Видаляє маркери списку */
+    padding: 0; /* Видаляє відступи списку */
+}
+/* Products */
+
+.products {
+    position: absolute; /* Встановлює абсолютну позицію елемента */
+    width: 840px; /* Ширина елемента */
+    height: 2000px; /* Висота елемента */
+    left: 495px; /* Відступ зліва */
+    top: 225px; /* Відступ зверху */
+}
+
+/* Card Product */
+
+.card-product {
+    position: absolute; /* Встановлює абсолютну позицію елемента */
+    width: 258px; /* Ширина елемента */
+    height: 750px; /* Висота елемента */
+}
+
+/* Barberton Daisy, Angel Wing Begonia, African Violet, Beach Spider Lily, Blushing Bromeliad, Aluminum Plant, Bird's Nest Fern, Broadleaf Lady Palm, Chinese Evergreen */
+
+.card-product h3 {
+    position: absolute; /* Встановлює абсолютну позицію елемента */
+    width: auto; /* Ширина автоматично підлаштовується під вміст */
+    height: 16px; /* Висота елемента */
+    left: 0; /* Відступ зліва */
+    top: 312px; /* Відступ зверху */
+    font-family: 'Cera Pro'; /* Шрифт тексту */
+    font-style: normal; /* Стиль шрифту */
+    font-weight: 400; /* Жирність шрифту */
+    font-size: 16px; /* Розмір шрифту */
+    line-height: 16px; /* Висота рядка */
+    color: #3D3D3D; /* Колір тексту */
+}
+
+/* $119.00, $169.00, $199.00, $129.00, $139.00, $179.00, $99.00, $59.00, $39.00 */
+
+.card-product p {
+    position: absolute; /* Встановлює абсолютну позицію елемента */
+    width: auto; /* Ширина автоматично підлаштовується під вміст */
+    height: 16px; /* Висота елемента */
+    left: 0; /* Відступ зліва */
+    top: 334px; /* Відступ зверху */
+    font-family: 'Cera Pro'; /* Шрифт тексту */
+    font-style: normal; /* Стиль шрифту */
+    font-weight: 700; /* Жирність шрифту */
+    font-size: 18px; /* Розмір шрифту */
+    line-height: 16px; /* Висота рядка */
+    color: #46A358; /* Колір тексту */
+}
+
+/* Rectangle 6, Rectangle 7, Rectangle 8, Rectangle 11, Rectangle 12, Rectangle 14, Rectangle 16, Rectangle 17, Rectangle 19 */
+
+.card-product .product-image {
+    position: relative; /* Встановлює абсолютну позицію елемента */
+    width: 258px; /* Ширина елемента */
+    height: 300px; /* Висота елемента */
+    left: 0; /* Відступ зліва */
+    top: 0; /* Відступ зверху */
+    background: #FBFBFB; /* Колір фону елемента */
+}
+
+/* image 1, product-21-320x320 1, image 2, 01 3, image 7, image 8, image 9, product-20-320x320 1, image 10 */
+
+.card-product .product-image img {
+    position: relative; /* Встановлює абсолютну позицію елемента */
+    width: 250px; /* Ширина елемента */
+    height: 250px; /* Висота елемента */
+    left: 4px; /* Відступ зліва */
+    top: auto; /* Автоматичне визначення відступу зверху */
+    background-repeat: no-repeat; /* Забороняє повторення фонового зображення */
+    mix-blend-mode: multiply; /* Режим змішування кольорів */
+}
+
+/* Розміщення окремих карток товарів */
+
+.card-product:nth-child(1) { left: 0; top: 0; } /* Barberton Daisy */
+.card-product:nth-child(2) { left: 291px; top: 0; } /* Angel Wing Begonia */
+.card-product:nth-child(3) { left: 582px; top: 0; } /* African Violet */
+.card-product:nth-child(4) { left: 0; top: 420px; } /* Beach Spider Lily */
+.card-product:nth-child(5) { left: 291px; top: 420px; } /* Blushing Bromeliad */
+.card-product:nth-child(6) { left: 582px; top: 420px; } /* Aluminum Plant */
+.card-product:nth-child(7) { left: 0; top: 840px; } /* Bird's Nest Fern */
+.card-product:nth-child(8) { left: 291px; top: 840px; } /* Broadleaf Lady Palm */
+.card-product:nth-child(9) { left: 582px; top: 840px; } /* Chinese Evergreen */
+
+/* Розміщення окремих зображень товарів */
+
+.card-product img { top: 31px; background-image: url("images/image 1.png"); }
+.card-product img { top: 25px; background-image: url("images/product-21.png"); }
+.card-product img { top: 24px; background-image: url("images/image 2.png"); }
+.card-product img { top: 6px; background-image: url("images/01 3.png"); }
+.card-product img { top: 23px; background-image: url("images/image 7.png"); }
+.card-product img { top: 23px; background-image: url("images/image 8.png"); }
+.card-product img { top: 18px; background-image: url("images/image 9.png"); }
+.card-product img { top: 28px; background-image: url("images/product-20.png"); }
+.card-product img { top: 19px; background-image: url("images/image 10.png"); }
+
+/* Super Sale Banner */
+
+.super-sale {
+    position: absolute; /* Встановлює абсолютну позицію елемента */
+    width: 370px; /* Ширина елемента */
+    height: 50px; /* Висота елемента */
+    left: 112px; /* Відступ зліва */
+    top: 850px; /* Відступ зверху */
+
+}
+
+.super-sale-banner {
+    position: absolute; /* Встановлює абсолютну позицію елемента */
+    width: 310px; /* Ширина елемента */
+    height: 50px; /* Висота елемента */
+    left: 29px; /* Відступ зліва */
+    top: 0; /* Відступ зверху */
+    background: linear-gradient(180deg, rgba(70, 163, 88, 0.1) 0%, rgba(70, 163, 88, 0.03) 100%); /* Градієнтний фон */
+}
+
+.super-sale-title {
+    position: absolute; /* Встановлює абсолютну позицію елемента */
+    width: 266px; /* Ширина елемента */
+    height: 100px; /* Висота елемента */
+    left: 65px; /* Відступ зліва */
+    top: 10px; /* Відступ зверху */
+    font-family: 'Hanging Letters'; /* Шрифт тексту */
+    font-style: normal; /* Стиль шрифту */
+    font-weight: 400; /* Жирність шрифту */
+    font-size: 90px; /* Розмір шрифту */
+    line-height: 85px; /* Висота рядка */
+    color: #46A358; /* Колір тексту */
+}
+
+.up-to-75 {
+    position: absolute; /* Встановлює абсолютну позицію елемента */
+    width: 166px; /* Ширина елемента */
+    height: 16px; /* Висота елемента */
+    left: 70px; /* Відступ зліва */
+    top: 94px; /* Відступ зверху */
+    font-family: 'Cera Pro'; /* Шрифт тексту */
+    font-style: normal; /* Стиль шрифту */
+    font-weight: 700; /* Жирність шрифту */
+    font-size: 22px; /* Розмір шрифту */
+    line-height: 16px; /* Висота рядка */
+    text-align: center; /* Вирівнювання тексту по центру */
+    color: #3D3D3D; /* Колір тексту */
+}
+
+.plant-image {
+    position: absolute; /* Встановлює абсолютну позицію елемента */
+    width: 370px; /* Ширина елемента */
+    height: 470px; /* Висота елемента */
+    left: -35px; /* Відступ зліва */
+    top: 140px; /* Відступ зверху */
+    mix-blend-mode: multiply; /* Режим змішування кольорів */
+}
+.pagination {
+    position: absolute; /* Фіксуємо блок пагінації */
+    bottom: 10px; /* Відступ від нижнього краю */
+    right: 100px; /* Відступ від правого краю */
+    display: flex;
+    top: 1550px;
+    gap: 10px; /* Відстань між номерами */
+}
+
+.page {
+    display: inline-block;
+    width: 40px; /* Ширина рамочки */
+    height: 40px; /* Висота рамочки */
+    line-height: 40px; /* Вирівнювання тексту вертикально */
+    text-align: center; /* Вирівнювання тексту горизонтально */
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555; /* Стандартний колір тексту */
+    border: 2px solid #ccc; /* Сіра рамка */
+    border-radius: 2px; /* Закруглення рамки */
+    text-decoration: none; /* Прибираємо підкреслення */
+    transition: all 0.3s ease; /* Анімація при наведенні */
+}
+
+.page:hover {
+    color: #fff; /* Білий текст при наведенні */
+    background-color: #46A358; /* Зелений фон при наведенні */
+    border-color: #46A358; /* Зелена рамка при наведенні */
+}
+
+/* Робимо цифру "1" зеленою */
+.page.active {
+    color: #fff; /* Білий текст */
+    background-color: #46A358; /* Зелений фон */
+    border-color: #46A358; /* Зелена рамка */
+}
